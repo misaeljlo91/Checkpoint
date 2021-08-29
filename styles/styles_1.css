@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.general_container{
+    display: flex;
+    flex-direction: column;
+}
+/* ENCABEZADO */
+#principal_logo{
+    position: absolute;
+    height: 15vh;
+    top: .5rem;
+    margin-left: 2rem;
+}
+nav{
+    height: 7rem;
+    padding: 2rem;
+    overflow: hidden;
+    background-color: blue;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+li:not(.exotic){
+    float: right;
+}
+li:not(.title_bar){
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+li.title_bar{
+    float: left;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 8rem;
+    list-style-type: none;
+}
+li:hover:not(.title_bar, .exotic){
+    background-color: yellow;
+    color: black;
+}
+/* CONTENIDO */
+main{
+    background-color: yellow;
+}
+section.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+img.image_page{
+    height: 200px;
+}
+h3.subtitle{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+div{
+    background-color: green;
+    padding: 1rem;
+}
+div.clasic_dance, div.urban{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 3rem 0 3rem;
+}
+div.exotic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 20rem 0 20rem; 
+}
+section.text{
+    display: flex;
+    flex-direction: row;
+}
+div.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p.date{
+    color: white;
+    font-style: italic;
+    text-align: right;
+}
+ul.exotic{
+    margin-left: 1rem;   
+}
+li.exotic{
+    display: block;
+    text-align: justify;
+    padding: 0;
+    color: black;
+}
+/* PIE DE PÁGINA */
+footer.container{
+    background-color: red;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-top: 3rem;
+    color: white;
+}
+section.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+fieldset{
+    padding: .5rem;
+}
